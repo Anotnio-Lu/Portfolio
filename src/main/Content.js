@@ -1,5 +1,5 @@
 import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
+import Project from './components/Project';
 import Resume from './components/Resume';
 import ContactMe from './components/ContactMe';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -9,19 +9,19 @@ const Content = () => {
     return (
         <div className="home">
             <Switch>
-            <Route exact path='/'>
+            <Route exact path='/Portfolio'>
               <AboutMe />
             </Route>
-            <Route path='/aboutme'>
+            <Route exact path='/Portfolio/aboutme'>
               <AboutMe />
             </Route>
-            <Route path='/portfolio'>
-              <Portfolio />
+            <Route exact path='/Portfolio/project'>
+              <Project />
             </Route>
-            <Route path='/resume'>
+            <Route exact path='/Portfolio/resume'>
               <Resume />
             </Route>
-            <Route path='/contactme'>
+            <Route exact path='/Portfolio/contactme'>
               <ContactMe />
             </Route>
           </Switch>

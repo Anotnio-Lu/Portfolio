@@ -4,6 +4,9 @@ import React, {useState} from 'react';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+
+
+
   return (
     <nav className="navbar">
       <h1>Anotnio Ray Lu</h1>
@@ -13,10 +16,10 @@ const Navbar = () => {
         <span></span>
       </div>
         <ul className={menuOpen? "open":""}>
-          <NavLink exact to="/aboutme" activeClassName="active">About Me</NavLink>
-          <NavLink exact to="/portfolio" activeClassName="active">Portfolio</NavLink>
-          <NavLink exact to="/contactme" activeClassName="active">Contact</NavLink>
-          <NavLink exact to="/resume" activeClassName="active">Resume</NavLink>
+          <NavLink exact to="/Portfolio/aboutme" activeClassName="active">About Me</NavLink>
+          <NavLink exact to="/Portfolio/portfolio" activeClassName="active">Portfolio</NavLink>
+          <NavLink exact to="/Portfolio/contactme" activeClassName="active">Contact</NavLink>
+          <NavLink exact to="/Portfolio/resume" activeClassName="active">Resume</NavLink>
       </ul>
     </nav>
   );

@@ -11,7 +11,6 @@ function App() {
       <div className='box'></div>
       <h1 className='welcomeh1'>Welcome</h1>
       <div className="App">
-        
         <Header />
         <div className="content-wrapper">
           <div className="content">
